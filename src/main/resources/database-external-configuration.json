@@ -1,0 +1,14 @@
+[
+  {
+    "jdbcUrl": "jdbc:postgresql://localhost:5432/configuration-api-db?currentSchema=configuration-api-schema",
+    "username": "postgres",
+    "password": null,
+    "flowId": "ALL"
+  },
+  {
+    "jdbcUrl": "jdbc:postgresql://localhost:5432/entity-resolver-api-db?currentSchema=entity-resolver-api-schema",
+    "username": "postgres",
+    "password": null,
+    "flowId": "entity-resolver-api"
+  }
+]

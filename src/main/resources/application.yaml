@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: "Dynamic Datasource Discovery POC"
+
+database:
+  primary:
+    jdbc-url: ${POSTGRESQL_SENDER_DB_URL:jdbc:postgresql://localhost:5432/configuration-api-db?currentSchema=configuration-api-schema}
+    username: ${POSTGRESQL_SENDER_DB_USER:postgres}
+    password: ${POSTGRESQL_SENDER_DB_PASSWORD:}
+  external-configuration: ${SENDER_DATABASE_EXTERNAL_CONFIGURATION:/database-external-configuration.json}
+  #external-configuration: ${SENDER_DATABASE_EXTERNAL_CONFIGURATION:}
+
